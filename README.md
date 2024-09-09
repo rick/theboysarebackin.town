@@ -25,3 +25,7 @@ This will create a /var/run directory for lockrun to use, and will then provide 
  - https://github.com/rick/litestream
  - http://unixwiz.net/tools/lockrun.html
  - https://en.wikipedia.org/wiki/Thin_Lizzy
+
+## Note:
+
+This does not include the boys. Boys sold separately. Put your own boys in theboys/arebackintown.mp3
