@@ -1,0 +1,10 @@
+#!/bin/bash
+
+#
+# See: http://unixwiz.net/tools/lockrun.html
+#
+
+DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && cd .. && pwd )"
+
+cd ${DIR}/lockrun
+gcc lockrun.c -o lockrun

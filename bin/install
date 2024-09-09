@@ -1,0 +1,12 @@
+#!/bin/bash
+
+DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && cd .. && pwd )"
+
+VARRUNDIR="/var/run/theboysarebackin.town"
+echo "Creating /var/run/theboysarebackin.town ... may need to be run as root."
+mkdir -p "${VARRUNDIR}"
+
+echo "Add the following two lines to /etc/crontab:"
+echo "* * * * * 	root	${DIR}/lockrun/lockrun --lockfile=${VARRUNDIR}/litestream.lock --quiet -- ${DIR}/bin/run-litestream.sh"
+echo "* * * * * 	root	${DIR}/lockrun/lockrun --lockfile=${VARRUNDIR}/source.lock --quiet -- ${DIR}/bin/spread-the-word-around.sh"
+

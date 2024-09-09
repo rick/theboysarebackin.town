@@ -1,0 +1,23 @@
+#!/bin/bash
+
+#
+# See: http://unixwiz.net/tools/lockrun.html
+#
+
+DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && cd .. && pwd )"
+
+set -e
+
+echo "Calling the boys"
+
+${DIR}/bin/build-lockrun
+
+echo "Tell them about coming to town"
+
+cd ${DIR}/litestream
+make
+
+echo "Spreading the word around"
+
+# TODO: install cron
+

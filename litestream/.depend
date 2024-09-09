@@ -1,0 +1,28 @@
+client.o: client.c stream_config.h include/stream_sched.h \
+ include/stream_inet.h include/stream_std.h
+hexdump.o: hexdump.c
+hexify.o: hexify.c
+http.o: http.c include/http.h
+icy.o: icy.c include/textutils.h icy.h
+mp3.o: mp3.c mp3.h
+playlist.o: playlist.c include/stream_std.h playlist.h \
+ include/textutils.h
+restream.o: restream.c stream_config.h include/stream_sched.h \
+ include/stream_inet.h include/stream_std.h icy.h yp.h
+server.o: server.c stream_config.h include/stream_sched.h \
+ include/stream_inet.h include/stream_std.h
+source.o: source.c stream_config.h include/stream_sched.h \
+ include/stream_inet.h include/stream_std.h include/http.h icy.h mp3.h \
+ playlist.h
+stream.o: stream.c stream_config.h include/stream_sched.h \
+ include/stream_inet.h include/stream_std.h icy.h yp.h
+stream_cli.o: stream_cli.c stream_config.h include/stream_sched.h \
+ include/stream_inet.h include/stream_std.h
+stream_log.o: stream_log.c include/stream_std.h
+stream_sched.o: stream_sched.c stream_config.h include/stream_sched.h \
+ include/stream_std.h
+stream_serv.o: stream_serv.c stream_config.h include/stream_sched.h \
+ include/stream_inet.h include/stream_std.h
+textutils.o: textutils.c include/textutils.h
+yp.o: yp.c stream_config.h include/stream_sched.h include/stream_inet.h \
+ include/stream_std.h icy.h include/http.h include/textutils.h
