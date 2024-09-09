@@ -4,6 +4,8 @@
 ![](./images/dril-tweet.png)
 _(https://x.com/dril/status/670963270317154304)_
 
+![](./images/down-at-dinos.png)
+
 ## Getting it goin'
 
 First compile any tools (litestream and lockrun). Note that litestream was last updated circa 2012 and it might build noisily.
