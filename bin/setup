@@ -17,7 +17,5 @@ echo "Tell them about coming to town"
 cd ${DIR}/litestream
 make
 
-echo "Spreading the word around"
-
-# TODO: install cron
+echo "Spread the word around -- run bin/install"
 
