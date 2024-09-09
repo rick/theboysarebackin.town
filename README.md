@@ -4,6 +4,13 @@
 ![](./images/dril-tweet.png)
 _(https://x.com/dril/status/670963270317154304)_
 
+----
+
+![](./images/toot.png)
+_(https://tinnies.club/@rick/112723240050962092)_
+
+----
+
 ![](./images/down-at-dinos.png)
 
 ## Getting it goin'
