@@ -1,1 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>theboysarebackin.town</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-size: 2em;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="text"></div>
 
+    <script>
+        const texts = [
+            "Guess who just got back today",
+            "Them wild-eyed boys that had been away",
+            "Haven't changed, had much to say",
+            "But man, I still think them cats are crazy",
+            "They were askin' if you were around",
+            "How you was, where you could be found",
+            "Told them you were livin' downtown",
+            "Drivin' all the old men crazy",
+            "The boys are back in town, the boys are back in town",
+            "I said, the boys are back in town, the boys are back in town",
+            "You know that chick that used to dance a lot",
+            "Every night, she'd be on the floor, shakin' what she'd got",
+            "Man, when I tell you she was cool, she was red hot",
+            "I mean, she was steamin'",
+            "And that time over at Johnny's place",
+            "Well, this chick got up and she slapped Johnny's face",
+            "Man, we just fell about the place",
+            "If that chick don't want to know, forget her",
+            "Spread the word around",
+            "Guess who's back in town?",
+            "You spread the word around",
+            "Friday night, they'll be dressed to kill",
+            "Down at Dino's Bar 'n' Grill",
+            "The drink will flow and blood will spill",
+            "And if the boys want to fight, you better let 'em",
+            "That jukebox in the corner blastin' out my favorite song",
+            "The nights are getting warmer, it won't be long",
+            "Won't be long 'til the summer comes",
+            "Now that the boys are here again",
+            "The boys are back in town again",
+            "Been hangin' down at Dino's"
+        ];
+
+        // Select a lyric at random
+        document.getElementById('text').textContent = texts[Math.floor(Math.random() * texts.length)];
+
+        // Redirect after 3 seconds
+        setTimeout(() => {
+            window.location.href = "again";
+        }, 3000);
+    </script>
+</body>
+</html>
